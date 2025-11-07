@@ -6,13 +6,15 @@ A full-stack request header parser microservice built with Node.js/Express backe
 
 ## 🎓 Certification
 
-**Course:** [FreeCodeCamp Back End Development and APIs](https://www.freecodecamp.org/learn/back-end-development-and-apis/#back-end-development-and-apis-projects)
+**Course:** [FreeCodeCamp Back End Development and APIs](https://www.freecodecamp.org/learn/back-end-development-and-apis/#basic-node-and-express)
 
 **Complete Your Certificate:**
 - ✅ This project (Request Header Parser) fulfills one requirement
 
-**Full Certification Path:** Complete all 5 back-end projects to earn your certification
-- 🎯 This is one of the essential portfolio projects demonstrating back-end development proficiency
+**Full Project Suite:** [5 back-end projects from Timestamp Microservice to Final Certification Projects](https://github.com/acheronx0577/Back-End-Development-and-APIs)
+- 🎓 Complete all projects to earn your certification
+
+This repository contains one of the portfolio projects needed to demonstrate back-end development proficiency and earn the freeCodeCamp certificate.
 
 ---
 

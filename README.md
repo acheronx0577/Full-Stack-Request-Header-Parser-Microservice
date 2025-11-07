@@ -70,6 +70,9 @@ This repository contains one of the portfolio projects needed to demonstrate bac
    npm install
    ```
    ```
+   npm install express cors dotenv
+   ```
+   ```
    npm init
    ```
    ```

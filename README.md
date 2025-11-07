@@ -22,7 +22,7 @@ This repository contains one of the portfolio projects needed to demonstrate bac
 
 <img width="1020" height="1237" alt="Screenshot 2025-11-07 151017" src="https://github.com/user-attachments/assets/e2729ef5-4c34-4a41-90b7-3e675736caff" />
 
-🌐 **Live Demo:** *[Your deployed link here]*
+🌐 **Live Demo:** https://full-stack-request-header-parser-mi.vercel.app
 
 ---
 

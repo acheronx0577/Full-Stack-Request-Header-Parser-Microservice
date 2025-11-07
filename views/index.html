@@ -1,34 +1,121 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>REQUEST_HEADER_PARSER</title>
+  </head>
+  <body>
+    <div class="terminal">
+      <header class="terminal-header">
+        <div class="window-controls">
+          <span class="control close"></span>
+          <span class="control minimize"></span>
+          <span class="control maximize"></span>
+        </div>
+        <div class="title-bar">
+          <span class="prompt">></span>
+          <span class="title">REQUEST_HEADER_PARSER</span>
+          <span class="cursor">_</span>
+        </div>
+      </header>
 
-<html>
+      <main class="terminal-body">
+        <div class="app-header">
+          <h1 class="app-title">~/api/header-parser</h1>
+          <div class="status-bar">
+            <span class="status-item">API_READY</span>
+            <span class="status-item">v2.1.0</span>
+            <span class="status-item">RESTful</span>
+          </div>
+        </div>
 
-   <head>
-      <title>Request Header Parser</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
+        <div class="api-section">
+          <div class="endpoint-card">
+            <div class="endpoint-header">
+              <span class="method">GET</span>
+              <span class="endpoint-url">/api/whoami</span>
+            </div>
+            <p class="endpoint-desc">
+              Returns client information including IP address, language, and software details from request headers.
+            </p>
+            <button id="test-whoami" class="test-btn">
+              TEST_ENDPOINT
+            </button>
+          </div>
 
-   <body>
-      <div class="container">
-        <h1>Request Header Parser Microservice</h1>
+          <div class="endpoint-card">
+            <div class="endpoint-header">
+              <span class="method">GET</span>
+              <span class="endpoint-url">/api/headers</span>
+            </div>
+            <p class="endpoint-desc">
+              Returns complete request headers for advanced analysis and debugging purposes.
+            </p>
+            <button id="test-headers" class="test-btn">
+              TEST_ENDPOINT
+            </button>
+          </div>
+        </div>
 
-        <h2>Example Usage:</h2>
-        <p>
-          <a href="api/whoami">[base url]/api/whoami</a>
-        </p>
+        <!-- API RESPONSE CONTAINER -->
+        <div id="output" class="output-panel">
+          <div class="output-header">
+            <span class="output-title">API_RESPONSE</span>
+            <span class="output-status" id="output-status">READY</span>
+          </div>
+          <div class="output-content">
+            <div class="json-display">
+              <pre><code id="json-content">// Click TEST_ENDPOINT to see API responses here</code></pre>
+            </div>
+          </div>
+        </div>
 
-        <h2>Example Output:</h2>
-        <p>
-          <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
-        </p>
-      </div>
-      <div class="footer">
-        <p>
-          by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
-        </p>
-      </div>
-   </body>
+        <div class="info-panel">
+          <div class="info-header">
+            <span class="info-title">API_FEATURES</span>
+          </div>
+          <div class="info-content">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <div class="feature-icon">IP</div>
+                <span class="feature-text">IP Address Detection</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">LAN</div>
+                <span class="feature-text">Language Preference</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">OS</div>
+                <span class="feature-text">Software/OS Detection</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">JSON</div>
+                <span class="feature-text">RESTful JSON API</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">CORS</div>
+                <span class="feature-text">CORS Enabled</span>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">SSL</div>
+                <span class="feature-text">Secure Headers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
-
+      <footer class="terminal-footer">
+        <div class="footer-stats">
+          <span class="stat">STATUS: <span class="stat-value" id="api-status">OPERATIONAL</span></span>
+          <span class="stat">REQUESTS: <span class="stat-value" id="request-count">0</span></span>
+          <span class="stat">UPTIME: <span class="stat-value" id="uptime">100%</span></span>
+        </div>
+      </footer>
+    </div>
+    <script src="/script.js"></script>
+  </body>
 </html>

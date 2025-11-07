@@ -30,7 +30,6 @@ This repository contains one of the portfolio projects needed to demonstrate bac
 
 - `GET /api/whoami` - Returns client IP, language, and software info
 - `GET /api/headers` - Returns complete request headers for analysis
-- `GET /api/hello` - Basic health check endpoint
 - `GET /` - Serves the TUI frontend interface
 
 ---

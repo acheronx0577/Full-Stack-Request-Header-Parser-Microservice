@@ -518,7 +518,7 @@ pre {
 	color: var(--text-primary);
 }
 
-/* JSON syntax highlighting */
+/* JSON syntax highlighting. */
 .json-key {
 	color: var(--accent-primary);
 }

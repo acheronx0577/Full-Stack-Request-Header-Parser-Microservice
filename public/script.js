@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             outputStatus.textContent = 'SUCCESS';
             outputStatus.style.color = 'var(--accent-success)';
             
-            // Update counter
+            // Update counter.
             requestCount++;
             document.getElementById('request-count').textContent = requestCount;
             
